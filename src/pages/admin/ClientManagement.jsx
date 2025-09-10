@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { clientsAPI } from '../../utils/api';
+import { API_BASE_URL_IMAGE, clientsAPI } from '../../utils/api';
 import toast from 'react-hot-toast';
 
 const ClientManagement = () => {
@@ -101,7 +101,7 @@ const ClientManagement = () => {
     setEditingClient(client);
     setFormData({
       name: client.name,
-      logo_url: client.logo_url || '',
+      logo_url:  client.logo_url || '',
       website: client.website || '',
       description: client.description || '',
       is_active: client.is_active,
@@ -184,7 +184,7 @@ const ClientManagement = () => {
               <div className="flex items-center justify-center mb-4">
                 {client.logo_url ? (
                   <img
-                    src={client.logo_url}
+                    src={`${API_BASE_URL_IMAGE}${client.logo_url}`}
                     alt={client.name}
                     className="max-h-16 w-auto object-contain"
                   />
@@ -303,7 +303,7 @@ const ClientManagement = () => {
                           {formData.logo_url && (
                             <div className="mt-2">
                               <img
-                                src={formData.logo_url}
+                                src={`${API_BASE_URL_IMAGE}${formData.logo_url}`}
                                 alt="Preview"
                                 className="h-16 w-auto object-contain"
                               />
