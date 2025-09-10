@@ -103,17 +103,18 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="contact">
+      <div className="mx-auto">
         {/* Header */}
-        <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Hubungi Kami</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-16 bg-primary-600 py-24" data-aos="fade-up">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Hubungi Kami</h2>
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Siap membantu kebutuhan kemasan plastik Anda. Hubungi kami untuk konsultasi dan penawaran terbaik
           </p>
           <div className="w-24 h-1 bg-primary-600 mx-auto mt-6"></div>
         </div>
 
+      <div className="container">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Info */}
           <div data-aos="fade-right">
@@ -266,6 +267,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
+      </div>
       </div>
     </section>
   );

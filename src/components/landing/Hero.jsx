@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HeroBanner from '../../assets/hero.jpeg';
@@ -13,11 +13,11 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="pt-24 relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-secondary-50 overflow-hidden">
+    <section id="home" className="pt-24 relative min-h-screen flex items-center justify-center bg-primary-600 overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.1'%3E%3Ccircle cx='7' cy='7' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.2'%3E%3Ccircle cx='7' cy='7' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }} />
       </div>
 
@@ -25,13 +25,11 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left" data-aos="fade-right">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Solusi <span className="text-primary-600">Inovatif</span> untuk
-              <br />
-              <span className="text-secondary-600">Kemasan Plastik</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+              Your Partner in Plastic Packaging Excellence
             </h1>
             
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-white/90 mb-8 leading-relaxed">
               PT. Central Blessindo Indonesia menyediakan berbagai produk plastik berkualitas tinggi 
               seperti PVC, POF Shrink, Perforasi, dan Flat Siku untuk kebutuhan kemasan industri Anda.
             </p>
@@ -39,7 +37,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="#products"
-                className="btn-primary inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                className="bg-amber-600 text-white inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
                 <span>Lihat Produk</span>
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -49,7 +47,7 @@ const Hero = () => {
               
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-primary-600 bg-white border-2 border-primary-600 rounded-full hover:bg-primary-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-primary-600 bg-white border-2 border-primary-600 rounded-full hover:bg-amber-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 Hubungi Kami
               </a>
@@ -58,16 +56,16 @@ const Hero = () => {
             {/* Stats */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-8 mt-12">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-600">10+</div>
-                <div className="text-gray-600">Tahun Pengalaman</div>
+                <div className="text-3xl font-bold text-amber-600">10+</div>
+                <div className="text-white">Tahun Pengalaman</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-secondary-600">500+</div>
-                <div className="text-gray-600">Klien Puas</div>
+                <div className="text-white">Klien Puas</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-accent-600">100%</div>
-                <div className="text-gray-600">Kualitas Terjamin</div>
+                <div className="text-white">Kualitas Terjamin</div>
               </div>
             </div>
           </div>
@@ -92,15 +90,15 @@ const Hero = () => {
             </div>
             
             {/* Floating elements */}
-            <div className="absolute top-10 -right-10 w-20 h-20 bg-accent-500 rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-secondary-500 rounded-full opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute top-10 -right-10 w-20 h-20 bg-primary-400 rounded-full opacity-20 animate-pulse"></div>
+            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-primary-200 rounded-full opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
           </div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce" data-aos="fade-up" data-aos-delay="1000">
-        <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </div>

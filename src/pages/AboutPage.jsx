@@ -81,11 +81,11 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col pt-24">
+    <div className="min-h-screen flex flex-col pt-24 overflow-x-hidden">
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-primary-50 via-white to-secondary-50 relative overflow-hidden">
+      <section className="pt-24 pb-16 bg-primary-600 relative overflow-x-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
@@ -95,10 +95,10 @@ const AboutPage = () => {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto" data-aos="fade-up">
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Tentang <span className="text-primary-600">PT. Central Blessindo</span> Indonesia
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              Tentang <span className="text-white">PT. Central Blessindo</span> Indonesia
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-white mb-8 leading-relaxed">
               Perjalanan kami dimulai dari sebuah usaha kecil hingga menjadi perusahaan terpercaya 
               dalam industri plastik shrink di Indonesia
             </p>
