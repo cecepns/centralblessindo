@@ -114,7 +114,7 @@ const Contact = () => {
           <div className="w-24 h-1 bg-primary-600 mx-auto mt-6"></div>
         </div>
 
-      <div className="container">
+      <div className="container mx-auto pb-14">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Info */}
           <div data-aos="fade-right">
