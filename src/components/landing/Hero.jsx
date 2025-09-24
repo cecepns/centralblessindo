@@ -26,12 +26,11 @@ const Hero = () => {
           {/* Left Content */}
           <div className="text-center lg:text-left" data-aos="fade-right">
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-              Your Partner in Plastic Packaging Excellence
+              Your Partner in Plastic Packaging 
             </h1>
             
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              PT. Central Blessindo Indonesia menyediakan berbagai produk plastik berkualitas tinggi 
-              seperti PVC, POF Shrink, Perforasi, dan Flat Siku untuk kebutuhan kemasan industri Anda.
+            <p className="text-xl text-white/90 mb-8 leading-relaxed italic">
+            “Selamat datang di PT. Central  Blessindo Indonesia penyedia plastik PVC shrink, POF Shrink dll. Berkualitas tinggi dengan layanan custom model dan ukuran sesuai kebutuhan bisnis Anda.”
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
