@@ -85,8 +85,10 @@ const Footer = () => {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Alamat</h4>
-            <div>Perumahan The Greenhill Cluster Bayhill Blok B3 No. 14D Pondok Rajeg
-            Cibinong Bogor 16914</div>
+            <div className="text-gray-300 text-sm leading-relaxed">
+              Perumahan The Greenhill Cluster Bayhill Blok B3 No. 14D Pondok
+              Rajeg Cibinong Bogor 16914
+            </div>
           </div>
         </div>
 
