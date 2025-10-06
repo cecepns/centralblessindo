@@ -12,7 +12,7 @@ const ProductsPreview = () => {
     const fetchTopProducts = async () => {
       setLoading(true);
       try {
-        const response = await productsAPI.getPublic(1, 4, '');
+        const response = await productsAPI.getPublic(1, 4, 1);
         if (response.data?.success) {
           setProducts(response.data.data.products || []);
         } else if (Array.isArray(response.data)) {

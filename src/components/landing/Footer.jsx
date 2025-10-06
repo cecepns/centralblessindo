@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,13 +12,16 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <div>
-                <h3 className="text-lg font-bold">PT. Central Blessindo</h3>
-                <p className="text-sm text-gray-400">Indonesia</p>
+                <h3 className="text-lg font-bold italic">
+                  &quot;Your Partner in Plastic Packaging&quot;
+                </h3>
+                {/* <p className="text-sm text-gray-400">Indonesia</p> */}
               </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Menyediakan solusi inovatif untuk kemasan plastik dengan kualitas terbaik 
-              dan pelayanan yang memuaskan untuk semua kebutuhan industri Anda.
+              Selamat datang di PT. Central Blessindo Indonesia penyedia plastik
+              PVC shrink, POF Shrink dll. Berkualitas tinggi dengan layanan
+              custom model dan ukuran sesuai kebutuhan bisnis Anda.
             </p>
           </div>
 
@@ -26,30 +30,42 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Tautan Cepat</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-gray-300 hover:text-primary-400 transition-colors text-sm">
+                <Link
+                  to="/"
+                  className="text-gray-300 hover:text-primary-400 transition-colors text-sm"
+                >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-gray-300 hover:text-primary-400 transition-colors text-sm">
+                <Link
+                  to="/about"
+                  className="text-gray-300 hover:text-primary-400 transition-colors text-sm"
+                >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#products" className="text-gray-300 hover:text-primary-400 transition-colors text-sm">
+                <Link
+                  to="/products"
+                  className="text-gray-300 hover:text-primary-400 transition-colors text-sm"
+                >
                   Products
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-gray-300 hover:text-primary-400 transition-colors text-sm">
+                <Link
+                  to="/contact"
+                  className="text-gray-300 hover:text-primary-400 transition-colors text-sm"
+                >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           {/* Products */}
-          <div>
+          {/* <div>
             <h4 className="text-lg font-semibold mb-4">Produk Kami</h4>
             <ul className="space-y-2">
               <li>
@@ -65,16 +81,23 @@ const Footer = () => {
                 <span className="text-gray-300 text-sm">Flat Siku</span>
               </li>
             </ul>
+          </div> */}
+
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Alamat</h4>
+            <div>Perumahan The Greenhill Cluster Bayhill Blok B3 No. 14D Pondok Rajeg
+            Cibinong Bogor 16914</div>
           </div>
         </div>
 
         {/* Bottom Border */}
-        <div className="border-t border-gray-700 mt-8 pt-8">
+        {/* <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} PT. Central Blessindo Indonesia. All rights reserved.
+              © {currentYear} PT. Central Blessindo Indonesia. All rights
+              reserved.
             </p>
-            
+
             <div className="flex items-center space-x-6">
               <a
                 href="mailto:sales@centralblessindonesia.com"
@@ -100,7 +123,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

@@ -457,7 +457,6 @@ const ProductManagement = () => {
                     onChange={handleDescriptionChange}
                     modules={quillModules}
                     placeholder="Masukkan deskripsi produk..."
-                    style={{ height: '200px', marginBottom: '20px' }}
                   />
                 </div>
 
